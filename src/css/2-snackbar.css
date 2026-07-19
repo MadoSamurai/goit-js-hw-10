@@ -1,0 +1,74 @@
+.snackbar-container {
+  text-align: left;
+}
+.form {
+  width: 360px;
+}
+.input-delay {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  display: flex;
+  flex-direction: column;
+}
+.input-delay input {
+  height: 40px;
+  box-sizing: border-box;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  padding: 8px 16px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  outline: none;
+}
+.input-delay input:hover {
+  border: 1px solid #000;
+}
+.input-delay input:focus {
+  border: 1px solid #4e75ff;
+}
+.form fieldset {
+  margin: 0;
+  margin-top: 16px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  padding-left: 28px;
+  display: flex;
+  justify-content: space-around;
+  box-sizing: border-box;
+}
+.form fieldset:hover,
+.form fieldset:focus {
+  border-color: #000;
+}
+.form fieldset legend {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+.form button {
+  border-radius: 8px;
+  padding-block: 8px;
+  padding-inline: 16px;
+  width: 360px;
+  height: 40px;
+  background: #4e75ff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  outline: none;
+  border: none;
+  margin-top: 24px;
+}
+.form button:hover {
+  background: #6c8cff;
+}

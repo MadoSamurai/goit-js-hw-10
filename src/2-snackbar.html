@@ -5,7 +5,7 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gallery</title>
+    <title>Form</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,13 +25,13 @@
           </a>
           <ul class="nav-list">
             <li class="nav-item">
-              <a class="nav-link {=$highlight-act}" href="./1-gallery.html"
-                >Gallery</a
+              <a class="nav-link {=$highlight-act}" href="./1-timer.html"
+                >Timer</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link {=$highlight-curr}" href="./2-form.html"
-                >Form</a
+              <a class="nav-link {=$highlight-curr}" href="./2-snackbar.html"
+                >Snackbar</a
               >
             </li>
           </ul>
@@ -40,12 +40,31 @@
     </header>
 
     <main>
-      <div class="container">
-        <a class="back-link" href="./index.html">Go back</a>
-        <ul class="gallery"></ul>
+      <a class="back-link" href="./index.html">Go back</a>
+      <div class="container snackbar-container">
+        <form class="form">
+          <label class="input-delay">
+            Delay (ms)
+            <input type="number" name="delay" required />
+          </label>
+
+          <fieldset>
+            <legend>State</legend>
+            <label>
+              <input type="radio" name="state" value="fulfilled" required />
+              Fulfilled
+            </label>
+            <label>
+              <input type="radio" name="state" value="rejected" required />
+              Rejected
+            </label>
+          </fieldset>
+
+          <button type="submit">Create notification</button>
+        </form>
       </div>
     </main>
 
-    <script type="module" src="./js/1-gallery.js"></script>
+    <script type="module" src="./js/2-snackbar.js"></script>
   </body>
 </html>
