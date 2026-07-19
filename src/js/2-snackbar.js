@@ -13,15 +13,25 @@ form.addEventListener('submit', (event) => {
     .then((delay) => {
       iziToast.success({
         title: 'OK',
+        titleColor: '#fff',
+        titleSize:'16',
         message: `✅ Fulfilled promise in ${delay}ms`,
         position: 'topRight',
+        messageColor: '#fff',
+        messageSize:'16',
+        backgroundColor: '#59a10d',
       });
     })
     .catch((delay) => {
       iziToast.error({
         title: 'Error',
+        titleColor: '#fff',
+        titleSize:'16',
         message: `❌ Rejected promise in ${delay}ms`,
         position: 'topRight',
+        messageColor: '#fff',
+        messageSize:'16',
+        backgroundColor: '#ef4040',
       });
     });
 

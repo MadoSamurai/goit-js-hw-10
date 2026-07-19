@@ -68,6 +68,9 @@
   outline: none;
   border: none;
   margin-top: 24px;
+  transition-property: background;
+  transition-duration: 0.3s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form button:hover {
   background: #6c8cff;

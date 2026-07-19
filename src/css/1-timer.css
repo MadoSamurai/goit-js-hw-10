@@ -13,6 +13,17 @@
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #2e2f42;
+  outline: none;
+}
+.date-input:hover {
+  border-color: #000;
+}
+.date-input:focus {
+  border-color: #4e75ff;
+}
+.date-input:disabled {
+  background: #fafafa;
+  color: #808080;
 }
 .date-btn {
   border-radius: 8px;
@@ -28,6 +39,12 @@
   color: #fff;
   border: none;
   cursor: pointer;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.date-btn:hover {
+  background: #6c8cff;
 }
 .date-btn:disabled {
   background: #cfcfcf;
